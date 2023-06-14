@@ -1,3 +1,4 @@
+import config
 import json
 import requests
 import time
@@ -12,12 +13,6 @@ from datetime import timedelta
 # It's necessary to :
 # - update APPLICATION_ID
 # - update request_url at the end of the script
-
-# unique application id : you can find this in the curl's command to generate jwt token or with Base64(consumer-key:consumer-secret) keys application
-APPLICATION_ID = '<token>'
-
-# url to obtain acces token
-TOKEN_URL = "https://portail-api.meteofrance.fr/token"
 
 class Client(object):
 
